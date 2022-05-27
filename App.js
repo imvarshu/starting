@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={{ flex: 1, justifyContent: 'space-around'}}>
       <BasicButton title="Login" type="primary" onPress={()=>{ console.log('pressed') }}/>
+      <BasicButton title="Register" />
       </View>
     </View>
   );
