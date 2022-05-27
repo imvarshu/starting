@@ -1,11 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import BasicButton from './components/BasicButton';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={{ flex: 1, justifyContent: 'space-around'}}>
+      <BasicButton title="Login" type="primary" onPress={()=>{ console.log('pressed') }}/>
+      <BasicButton title="Register"/>
+      </View>
     </View>
   );
 }
