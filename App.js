@@ -12,6 +12,7 @@ export default function App() {
         <BasicInput label ='Username' value = {username} onChangeText = {(val) =>{setUsername(val)}}/>
         <BasicInput label ='Password' value = {password} onChangeText = {(val) =>{setPassword(val)}}/>
       <BasicButton title="Login" type="primary" onPress={()=>{ console.log('pressed') }}/>
+      <BasicButton title="Register" />
       </View>
     </View>
   );
